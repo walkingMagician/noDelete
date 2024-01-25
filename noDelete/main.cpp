@@ -34,9 +34,7 @@ void main() {
 	}
 #endif
 
-	int x, a, i;
-	cout << " x > 0; x = ";	cin >> x;
-	
+
 	
 		
 }
