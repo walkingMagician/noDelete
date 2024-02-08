@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cmath>
 using namespace std;
 
 //#define ZADACHA_1 
@@ -6,6 +7,9 @@ using namespace std;
 //#define ZADACHA_3
 //#define ZADACHA_4
 //#define ZADACHA_5
+//#define ZADACHA_6
+//#define ZADACHA_7
+
 void main() {
 	setlocale(LC_ALL, "");
 
@@ -78,6 +82,60 @@ void main() {
 	cout << "Улитка ползла " << n << " дней, за эти дни улитка проползла " << x << " см" << endl;
 #endif
 
+#ifdef ZADACHA_6
+	int n, k, sum = 0;
+	cout << "n: ";	cin >> n;
+	cout << "k: ";	cin >> k;
+
+	for (int i = 0; i <= n; i++)
+	{
+		sum += pow(i, k);
+	}
+	cout << sum;
+#endif
+	
+#ifdef ZADACHA_7
+	int n;
+	cout << "n: "; cin >> n;
+	int *arr = new int[n];
+	for (int i = 0; i < n; i++)
+	{
+		cin >> arr[i];
+		
+	}
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
+	
+
+	const int x = 2;
+	int arr[x][x];
+	int n;
+	for (int i = 0; i < x; i++)
+	{
+		for (int j = 0; j < x; j++)
+		{
+			cout << "arr [" << i << "] [" << j << "] = ";
+			cin >> arr[i][j];
+		}
+	}
+
+	for (int i = 0; i < x; i++)
+	{
+		for (int j = 0; j < x; j++)
+		{
+			cout << arr[i][j];
+		}
+		cout << endl;
+	}
+#endif
+
+	int i;
+	cout << "i = "; cin >> i;
+	cout <<"i/10 = " << i / 10 << endl;
+	cout <<"i%10 = " << i % 10 << endl;
 
 }
 /* задачи №1
